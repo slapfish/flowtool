@@ -26,3 +26,6 @@ Thumbs.db
 .env
 .env.*
 .direnv
+
+# Saved flows
+.flowtool

@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@import "@xyflow/react/dist/style.css";
+
+:root {
+  --grid-color: #e4e4e7;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --grid-color: #2a2a2e;
+  }
+}
+
+.react-flow__handle {
+  width: 12px;
+  height: 12px;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+/* Larger invisible hit area for easier targeting */
+.react-flow__handle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+/* show handles on node hover */
+.react-flow__node:hover .react-flow__handle {
+  opacity: 1;
+}
+
+/* show all handles when dragging a connection */
+.connecting .react-flow__handle {
+  opacity: 1;
+}
+
+/* Edge status selector needs to be above nodes */
+.edge-status-selector {
+  z-index: 1000 !important;
+}

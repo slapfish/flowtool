@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/Sidebar.tsx","./src/SubModuleContext.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/nodes/ActionNode.tsx","./src/nodes/DecisionNode.tsx","./src/nodes/EndNode.tsx","./src/nodes/ModuleNode.tsx","./src/nodes/NodeContent.tsx","./src/nodes/NodeHandles.tsx","./src/nodes/SituationNode.tsx","./src/nodes/index.ts"],"errors":true,"version":"5.8.3"}
